@@ -162,5 +162,6 @@ bool Menu::inputRandom() {
     std::cout << "Дерево сгенерировано и готово к расчету\n";
     // Всегда печатаем структуру дерева, даже для больших m
     tree.printTree();
+
     return true;
 }
