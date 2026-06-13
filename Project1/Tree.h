@@ -5,15 +5,19 @@
 
 class Tree {
 private:
-    Vertex* head; // head of singly linked list of vertices
+    Vertex* head; 
     int size;
     int totalApologies;
 
     // Вспомогательный DFS для проверки писем в поддереве
     bool dfs(int u, int parentId);
+    // Поиск вершины по id в списке вершин
     Vertex* findVertex(int id);
+    // Добавляет новую вершину в однонаправленный список вершин
     void appendVertex(int id);
+    // Вычисляет максимальную глубину в поддереве среди нужных вершин
     int maxDepth(int u, int parentId);
+    // Симулирует проход тритона по минимальному поддереву, считает извинения
     void simulateTraverse(int u, int parentId, bool &isFirst, int &apologies, bool onFinalPath);
     bool connectivityDfs(int u, int parentId);
 
@@ -35,7 +39,7 @@ public:
     void printTree();
     int calculateApologies();
     bool isConnectedPublic() { return isConnected(); }
-    // (traceRoute removed)
+   
 };
 
 #endif

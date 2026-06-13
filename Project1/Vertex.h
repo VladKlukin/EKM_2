@@ -7,6 +7,7 @@
 
 class Vertex {
 public:
+    // Представляет вершину дерева: id, количество писем, список соседей и флаги состояния
     int id;
     int letters;
     List neighbors;

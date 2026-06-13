@@ -9,6 +9,7 @@ private:
     Node* head;
     int currentSize;
 public:
+    // Односвязный список типа int, используется для хранения соседей вершины
     List();
     ~List();
     void clear();

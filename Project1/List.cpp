@@ -7,6 +7,7 @@ List::~List() {
 }
 
 void List::clear() {
+    // Освобождение узлов списка
     Node* current = head;
     while (current != nullptr) {
         Node* nextNode = current->next;
@@ -18,6 +19,7 @@ void List::clear() {
 }
 
 void List::push_back(int val) {
+    // Вставка в конец списка
     Node* newNode = new Node(val);
     if (head == nullptr) {
         head = newNode;
@@ -33,6 +35,7 @@ void List::push_back(int val) {
 }
 
 int List::get(int index) const {
+    // Получение значения по индексу (0-based). Если индекс вне диапазона, возвращает -1
     Node* temp = head;
     int count = 0;
     while (temp != nullptr) {

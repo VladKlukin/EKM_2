@@ -16,6 +16,7 @@ public:
     static bool isValidNeighbor(int neighbor, int currentId, int maxM);
     static bool isValidNi(int ni, int maxM);
     static bool isValidLi(int li);
+    // Проверка связности графа через Tree::isConnectedPublic
     static bool isTreeConnected(class Tree &tree);
 };
 

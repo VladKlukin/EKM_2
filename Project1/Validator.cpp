@@ -2,6 +2,7 @@
 #include "Tree.h"
 
 int Validator::getValidatedInt(int minVal, int maxVal) {
+    // Читает int из stdin, повторяя запрос до тех пор, пока ввод не попадёт в диапазон
     int value;
     while (true) {
         if (std::cin >> value) {
@@ -32,5 +33,6 @@ bool Validator::isValidLi(int li) {
 }
 
 bool Validator::isTreeConnected(Tree &tree) {
+    // Использует публичный обёрточный метод дерева для проверки связности
     return tree.isConnectedPublic();
 }
