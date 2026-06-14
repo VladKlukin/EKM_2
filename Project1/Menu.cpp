@@ -2,6 +2,7 @@
 #include "Validator.h"
 #include <iostream>
 #include <fstream>
+#include <string>
 #include <cstdlib>
 #include <ctime>
 
